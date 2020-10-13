@@ -1,0 +1,42 @@
+{
+  "name": "20201013-css-animations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html",
+    "build-prod": "parcel build index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "customDistStructure": {
+    "config": {
+      ".js": "assets/js",
+      ".map": "assets/maps",
+      ".css": "assets/css",
+      "assets/images": [
+        ".jpg",
+        ".jpeg",
+        ".png",
+        ".webp",
+        ".gif"
+      ],
+      "assets/medias": [
+        ".ogg",
+        ".webm",
+        ".mp4",
+        ".mp3",
+        ".wav"
+      ]
+    },
+    "options": {
+      "development": false
+    }
+  },
+  "devDependencies": {
+    "sass": "^1.27.0",
+    "postcss-modules": "latest",
+    "autoprefixer": "^10.0.1"
+  }
+}

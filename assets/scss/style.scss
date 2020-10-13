@@ -1,0 +1,92 @@
+/* Pseudo classes */
+
+#hov:hover {
+  background-color: aquamarine;
+  color: darkgreen;
+}
+
+#foc:focus {
+  background-color: cornflowerblue;
+}
+
+#act:active {
+  background-color: crimson;
+}
+
+#nth {
+  li:nth-child(odd) {
+    background-color: cyan;
+  }
+
+  li:nth-child(even) {
+    background-color: darkblue;
+    color: aliceblue;
+  }
+}
+
+/* Pseudo elements */
+
+.exBA {
+  font-size: 45px;
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 200px;
+
+  &::before {
+    content: '«';
+    color: grey;
+    display: block;
+    height: 50px;
+    width: 50px;
+  }
+
+  &::after {
+    content: '»';
+    color: grey;
+    display: block;
+    height: 50px;
+    width: 50px;
+  }
+}
+
+/* Properties */
+
+#colour {
+  background-color: rgba(130, 200, 165, 0.1);
+}
+
+#cir {
+  width: 150px;
+  height: 150px;
+  background-color: pink;
+  // border-radius: 50%;
+  // transform: scale(1);
+  // transform: translate(250px, 0px);
+  // transform: rotate(45deg);
+  transform: skew(20deg, 20deg);
+}
+
+/* Transition */
+
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  background-color: cyan;
+  //transition-property: background, transform;
+  //transition-duration: 1.5s; // 500ms = 0.5s = .5s
+  // transition-delay: 1s;
+  //transition-timing-function: ease-out; // ease-in
+  transition: all 1s ease-in;
+
+  &:hover {
+    background-color: crimson;
+    transform: rotate(45deg);
+  }
+}
+
+/* Animation */
+
+.boxAnim{
+  
+}
