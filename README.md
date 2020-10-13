@@ -4,11 +4,15 @@
 
 October 2020
 
-> 🔨  CSS Animations. From udemy: [Les animations CSS en 9 projets](https://www.udemy.com/course/les-animations-css-en-9-projets/)
+> 🔨  CSS Animations. From udemy: [Les animations CSS en 9 projets](https://www.udemy.com/course/les-animations-css-en-9-projets/) 
 
 * * *
 
+![logo](_readme-img/logo.png)
 
+
+
+Demo on [Github page](https://raigyo.github.io/css-animations/)
 
 ## Overview
 
@@ -69,6 +73,29 @@ Ex:
 For `  transition-timing-function`, we can use Chrome developer tools
 
 ![capture](_readme-img/bezier-01.PNG)
+
+We can use the shortcut property.
+
+The following code has the same result than the previous one.
+
+Note: using 'all' can affect the performances of the page.
+
+````scss
+.box {
+  width: 200px;
+  height: 200px;
+  margin: 50px;
+  background-color: cyan;
+  transition: all 1s ease-in;
+
+  &:hover {
+    background-color: crimson;
+    transform: rotate(45deg);
+  }
+}
+````
+
+
 
 ## Useful links
 

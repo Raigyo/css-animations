@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bac à sable Animation CSS</title>
+    <link rel="stylesheet" href="../../scss/nav.scss">
+    <link rel="stylesheet" href="../../scss/style.scss">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 class="text-center mt-5 display-2">Animation CSS</h1>
+    <h2 class="text-center mt-0 display-4">Pseudo-classes</h2>
+    <nav>
+      <ul>
+        <li><a href="../../../index.html">Home</a>
+        <li class="drop-down"><a href="#">Lessons</a>
+          <ul class="sub-menu">
+            <li class="selected">Pseudo classes</a></li>
+            <li><a href="02-before-after.html">Before After</a></li>
+            <li><a href="03-properties.html">Properties</a></li>
+            <li><a href="04-transition.html">Transitions</a></li>
+            <li><a href="05-animation.html">Animations</a></li>
+          </ul>
+        </li>
+        <li class="drop-down"><a href="#">Projects</a>
+          <ul class="sub-menu">
+            <li><a href="../projects/01-checkbox.html">Checkbox</a></li>
+            <li><a href="../projects/02-animation-svg.html">SVG animation</a></li>
+            <li><a href="../projects/03-flip.html">Flip</a></li>
+            <li><a href="../projects/04-animation.html">Animation 4 points</a></li>
+            <li><a href="../projects/05-overlay.html">Overlay</a></li>
+            <li><a href="../projects/06-menu.html">Menu</a></li>
+            <li><a href="../projects/07-before.html">Before & after</a></li>
+            <li><a href="../projects/08-clip-path.html">Clip path</a></li>
+            <li><a href="../projects/09-menu-checkbox.html">Menu checkbox</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <hr>
+    <div class="container">
+        <h2>Pseudo-classes :</h2>
+        <br>
+        <!-- Survol -->
+        <h5>Hover :</h5>
+        <div id="hov" class="card">
+            <div class="card-body">
+              Fly over me
+            </div>
+        </div>
+
+      <!-- Focus, élément spécial qui reçoit le focus en cliquant avec la souris
+          ou en le selectionnant avec une touche (tab) -->
+      <h5>Focus :</h5>
+      <div class="card">
+          <div class="card-body">
+              Focus :
+              <input id="foc" type="text">
+          </div>
+      </div>
+
+      <!-- Active, quand on clique sur un élément -->
+      <h5>Active :</h5>
+      <div id="act" class="card">
+          <div class="card-body">
+              Active
+          </div>
+      </div>
+
+      <!-- Nth-child, pour cibler un enfant en particulier -->
+      <h5>Nth-child :</h5>
+      <div class="card">
+          <div class="card-body">
+              <ul id="nth">
+                  <li>H</li>
+                  <li>E</li>
+                  <li>L</li>
+                  <li>L</li>
+                  <li>O</li>
+              </ul>
+          </div>
+      </div>
+    </div>
+</body>
+</html>
