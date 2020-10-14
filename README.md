@@ -12,7 +12,7 @@ October 2020
 
 
 
-Demo on [Github page](https://raigyo.github.io/css-animations/)
+Demo on [Github page](https://raigyo.github.io/css-animations/).
 
 ## Overview
 

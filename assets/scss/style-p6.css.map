@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,CAAA;EAEb,KAAK,EAAE,IAAI;CACZ",
+    "sources": [
+        "style-p6.scss"
+    ],
+    "names": [],
+    "file": "style-p6.css"
+}

@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Menu rideau</title>
-    <link rel="stylesheet" href="../../scss/nav.scss">
-    <link rel="stylesheet" href="../../scss/style-p6.scss">
+    <title>Curtain menu</title>
+    <link rel="stylesheet" href="../../scss/nav.css">
+    <link rel="stylesheet" href="../../scss/style-p6.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
+  <h1 class="text-center mt-5 display-2">Animation CSS</h1>
+  <h2 class="text-center mt-0 display-4">Curtain menu</h2>
   <nav>
     <ul>
-      <li class="drop-down"><a href="../../../index.html">Home</a>
+      <li><a href="../../../index.html">Home</a>
       <li class="drop-down"><a href="#">Lessons</a>
         <ul class="sub-menu">
           <li><a href="../lessons/01-pseudo-classes.html">Pseudo classes</a></li>
@@ -30,7 +32,7 @@
           <li><a href="03-flip.html">Flip</a></li>
           <li><a href="04-animation.html">Animation 4 points</a></li>
           <li><a href="05-overlay.html">Overlay</a></li>
-          <li><a href="06-menu.html">Menu</a></li>
+          <li class="selected">Menu</a></li>
           <li><a href="07-before.html">Before & after</a></li>
           <li><a href="08-clip-path.html">Clip path</a></li>
           <li><a href="09-menu-checkbox.html">Menu checkbox</a></li>
@@ -38,6 +40,7 @@
       </li>
     </ul>
   </nav>
+  <div class="main-container">
     <div id="myNav" class="overlay">
         <a href="#" onclick="closeNav()" class="closeBtn">&times;</a>
 
@@ -58,5 +61,6 @@
         document.getElementById("myNav").style.width = '0%';
     }
     </script>
+  </div>
 </body>
 </html>

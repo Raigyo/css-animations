@@ -2,16 +2,18 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8">
-    <title>flip flip</title>
+    <title>Flip Card</title>
     <link rel="stylesheet" href="../../scss/nav.scss">
     <link rel="stylesheet" href="../../scss/style-p3.scss">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
+    <h1 class="text-center mt-5 display-2">Animation CSS</h1>
+    <h2 class="text-center mt-0 display-4">Flip card</h2>
     <nav>
       <ul>
-        <li class="drop-down"><a href="../../../index.html">Home</a>
+        <li><a href="../../../index.html">Home</a>
         <li class="drop-down"><a href="#">Lessons</a>
           <ul class="sub-menu">
             <li><a href="../lessons/01-pseudo-classes.html">Pseudo classes</a></li>
@@ -25,7 +27,7 @@
           <ul class="sub-menu">
             <li><a href="01-checkbox.html">Checkbox</a></li>
             <li><a href="02-animation-svg.html">SVG animation</a></li>
-            <li><a href="03-flip.html">Flip</a></li>
+            <li class="selected">Flip</a></li>
             <li><a href="04-animation.html">Animation 4 points</a></li>
             <li><a href="05-overlay.html">Overlay</a></li>
             <li><a href="06-menu.html">Menu</a></li>
@@ -36,14 +38,14 @@
         </li>
       </ul>
     </nav>
-    <div class="carte">
-      <div class="devant">
-        <img src="https://images.unsplash.com/photo-1564740484728-968003fbecb9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="">
+    <div class="card">
+      <div class="front">
+        <img src="../../img/img.jpg" alt="">
       </div>
-      <div class="derriere">
-        <div class="contenu">
-          <h2>Titre</h2>
-          <span>Un peu de texte ...</span>
+      <div class="back">
+        <div class="content">
+          <h2>Title</h2>
+          <span>Some text ...</span>
         </div>
       </div>
     </div>
