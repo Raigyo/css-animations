@@ -42,7 +42,7 @@
   </nav>
   <div class="main-container">
     <div id="myNav" class="overlay">
-        <a href="#" onclick="closeNav()" class="closeBtn">&times;</a>
+        <a href="#" id="closeBtn" class="closeBtn">&times;</a>
 
         <div class="overlay-content">
             <a href="#">About</a>
@@ -51,15 +51,14 @@
             <a href="#">Contact</a>
         </div>
     </div>
-    <span onclick="openNav()">Menu</span>
-
+    <span id="openBtn" class="openBtn">Menu</span>
     <script>
-    function openNav(){
+      document.getElementById("openBtn").onclick = (e) => {
         document.getElementById("myNav").style.width = '100%';
-    }
-    function closeNav(){
+      }
+      document.getElementById("closeBtn").onclick = (e) => {
         document.getElementById("myNav").style.width = '0%';
-    }
+      }
     </script>
   </div>
 </body>

@@ -12,30 +12,6 @@
   },
   "author": "",
   "license": "ISC",
-  "customDistStructure": {
-    "config": {
-      ".js": "assets/js",
-      ".map": "assets/maps",
-      ".css": "assets/css",
-      "assets/images": [
-        ".jpg",
-        ".jpeg",
-        ".png",
-        ".webp",
-        ".gif"
-      ],
-      "assets/medias": [
-        ".ogg",
-        ".webm",
-        ".mp4",
-        ".mp3",
-        ".wav"
-      ]
-    },
-    "options": {
-      "development": false
-    }
-  },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
     "cssnano": "^4.1.10",
