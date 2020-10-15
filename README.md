@@ -102,3 +102,6 @@ Note: using 'all' can affect the performances of the page.
 - [Ziratsu/Cours-anim-CSS](https://github.com/Ziratsu/Cours-anim-CSS)
 - [Ziratsu/Projets-formation-Animations-CSS](https://github.com/Ziratsu/Projets-formation-Animations-CSS)
 - [cubic-bezier](https://cubic-bezier.com/)
+- [radial-gradient](https://developer.mozilla.org/en-US/docs/Web/CSS/radial-gradient)
+- [filter](https://developer.mozilla.org/en-US/docs/Web/CSS/filter)
+- [drop-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow)

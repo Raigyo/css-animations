@@ -4,18 +4,19 @@
 }
 
 nav {
-  width: 50%;
+  width: 100%;
   background-color: white;
-  float: left;
-  padding-left: 150px;
 }
 
 nav ul {
   list-style-type: none;
+  padding-left: 0px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 nav ul li {
-  float: left;
+  display: inline-block;
   width: 25%;
   text-align: center;
   position: relative;
@@ -58,6 +59,10 @@ nav a:hover {
   z-index: 1000;
 }
 
+.sub-menu ul {
+  padding-left: 50px;
+}
+
 nav > ul li:hover .sub-menu {
   display: block;
 }
@@ -65,7 +70,7 @@ nav > ul li:hover .sub-menu {
 .sub-menu li {
   float: none;
   width: 100%;
-  text-align: left;
+  text-align: center;
 }
 
 .sub-menu a {
