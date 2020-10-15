@@ -105,3 +105,4 @@ Note: using 'all' can affect the performances of the page.
 - [radial-gradient](https://developer.mozilla.org/en-US/docs/Web/CSS/radial-gradient)
 - [filter](https://developer.mozilla.org/en-US/docs/Web/CSS/filter)
 - [drop-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow)
+- [CSS clippath maker](https://bennettfeely.com/clippy/)

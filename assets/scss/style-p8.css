@@ -1,1 +1,22 @@
-/* No CSS *//*# sourceMappingURL=style-p8.css.map */
+.header {
+  height: 95vh;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(212, 106, 106, 0.1)), to(rgba(255, 170, 170, 0.7))), url("../img/img-clip.jpg");
+  background-image: linear-gradient(to right bottom, rgba(212, 106, 106, 0.1), rgba(255, 170, 170, 0.7)), url("../img/img-clip.jpg");
+  background-size: cover;
+  background-position: top;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.header h1 {
+  font-size: 50px;
+  letter-spacing: 12px;
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+/*# sourceMappingURL=style-p8.css.map */
