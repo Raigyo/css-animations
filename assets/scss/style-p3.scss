@@ -1,10 +1,8 @@
-*{
-  margin: 0;
-  padding: 0;
-}
 
-body{
-  background: rgb(218, 73, 48);
+.main-menu {
+  position: relative;
+  background-color: white;
+  z-index: 5000;
 }
 
 .card{
@@ -13,10 +11,6 @@ body{
   height: 480px;
   margin-top: 100px;
   margin-left: 40%;
-  //position: absolute;
-  //top: 50%;
-  //left: 50%;
-  //transform: translate(-50%,-50%);
 }
 
 .front, .back {
