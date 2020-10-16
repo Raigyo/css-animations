@@ -106,3 +106,4 @@ Note: using 'all' can affect the performances of the page.
 - [filter](https://developer.mozilla.org/en-US/docs/Web/CSS/filter)
 - [drop-shadow](https://developer.mozilla.org/en-US/docs/Web/CSS/filter-function/drop-shadow)
 - [CSS clippath maker](https://bennettfeely.com/clippy/)
+- [General sibling combinator](https://developer.mozilla.org/en-US/docs/Web/CSS/General_sibling_combinator)

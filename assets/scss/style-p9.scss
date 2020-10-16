@@ -1,0 +1,138 @@
+
+.main-menu {
+  position: relative;
+  background-color: white;
+  z-index: 5000;
+  padding-top: 3rem;
+}
+
+
+.navigation{
+  font-family: lato;
+}
+
+.navigationCheckbox {
+  display: none;
+}
+
+// red circle
+.navigationBg {
+  height: 96px;
+  width: 96px;
+  border-radius: 50%;
+  position: fixed;
+  top: 300px;
+  right: 104px;
+  background-image: radial-gradient(#c3073f, #855769);
+  z-index: 1000;
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.navigationBtn {
+  background-color: #fff;
+  height: 112px;
+  width: 112px;
+  position: fixed;
+  top: 300px;
+  right: 96px;
+  border-radius: 50%;
+  z-index: 2000;
+  box-shadow: 0 16px 48px rgba(0,0,0,0.1);
+  text-align: center;
+  cursor:pointer;
+}
+
+/* Burger menu */
+/* middle stroke */
+.navigationIcon{
+  position: relative;
+  margin-top: 56px;
+  width: 48px;
+  height: 2px;
+  background: #333;
+  display: inline-block;
+}
+
+/* two other strokes */
+
+.navigationIcon::before,
+.navigationIcon::after {
+  width: 48px;
+  height: 2px;
+  background: #333;
+  content: '';
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+
+/* place the 2 strokes (top and bottom) */
+.navigationIcon::before {
+  top: -12.8px;
+}
+.navigationIcon::after {
+  top: 12.8px;
+}
+
+/* navigation and list */
+
+.nav {
+  height: 60vh;
+  position: fixed;
+  width: 0;
+  opacity: 0;
+  z-index: 1500;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); // spring effect
+}
+
+.navigationList {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style-type: none;
+  text-align: center;
+  width: 100%;
+}
+
+.links {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 48px;
+  font-weight: 300;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* animations */
+
+// The general sibling combinator (~) separates two selectors and matches all iterations
+// of the second element, that are following the first element
+// (though not necessarily immediately), and are children of the same parent element.
+
+.navigationCheckbox:checked ~ .navigationBg {
+  //transform: scale(80); // red button extends on the screen
+  transform: scale(80);
+}
+
+.navigationCheckbox:checked ~ .nav {
+  opacity: 1;
+  width: 100%;
+}
+
+/* + : element after */
+
+.navigationCheckbox:checked + .navigationBtn .navigationIcon {
+  background-color: transparent;
+}
+
+.navigationCheckbox:checked + .navigationBtn .navigationIcon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.navigationCheckbox:checked + .navigationBtn .navigationIcon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
